@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "php": ">=7.2.1",
         "illuminate/database": "^8.75",
         "illuminate/pagination": "^8.75",
         "nikic/fast-route": "^1.3"
