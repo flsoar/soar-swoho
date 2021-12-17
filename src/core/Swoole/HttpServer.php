@@ -23,9 +23,13 @@ class HttpServer
      */
     public function build($name = '')
     {
+        if (! defined('APP')) {
+            return Result::error('the entry file does not define APP constants');
+        }
+
         $config = config('server.http');
         if (! $config) {
-            return Result::error('missing http config');
+            return Result::error('missing http server config');
         }
 
         if (! isset($config[$name])) {

@@ -6,7 +6,7 @@
 if (! function_exists('config')) {
     function route($key = '')
     {
-        $route = require dirname(dirname(dirname(__FILE__))) . '/config/route.php';
+        $route = require APP . '/config/route.php';
         if ( $key ) {
             if ( !isset($route[$key]) ) {
                 return false;
@@ -25,11 +25,11 @@ if (! function_exists('config')) {
     function config($str = '')
     {
         list($file, $key) = explode('.', $str);
-        if (! file_exists(dirname(dirname(dirname(__FILE__))) . "/config/{$file}.php")) {
+        if (! file_exists(APP . "/config/{$file}.php")) {
             return false;
         }
 
-        $config = require dirname(dirname(dirname(__FILE__))) . "/config/{$file}.php";
+        $config = require APP . "/config/{$file}.php";
         if (empty($key)) {
             return $config;
         }
