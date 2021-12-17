@@ -30,7 +30,6 @@
             "./src/common/functions.php"
         ]
     },
-    "minimum-stability":"dev",
     "require-dev": {
         "eaglewu/swoole-ide-helper": "dev-master",
         "symfony/var-dumper": "^6.0"
