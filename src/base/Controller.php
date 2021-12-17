@@ -1,7 +1,7 @@
 <?php
-namespace Soar\Swoho\Base;
-use Soar\Swoho\Common\Result;
-use Soar\Swoho\Common\Traits\OneKeyInstance;
+namespace Swoho\Base;
+use Swoho\Common\Result;
+use Swoho\Common\Traits\OneKeyInstance;
 abstract class Controller
 {
     use OneKeyInstance;

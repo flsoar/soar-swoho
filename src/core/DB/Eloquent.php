@@ -1,5 +1,5 @@
 <?php
-namespace Soar\Swoho\Core\DB;
+namespace Swoho\Core\DB;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 class Eloquent

@@ -1,5 +1,5 @@
 <?php
-namespace Soar\Swoho\Common\Traits;
+namespace Swoho\Common\Traits;
 
 /**
  * Class OneKeyInstance

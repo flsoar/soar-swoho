@@ -1,5 +1,5 @@
 <?php
-namespace Soar\Swoho\Facade;
+namespace Swoho\Facade;
 
 class Context
 {

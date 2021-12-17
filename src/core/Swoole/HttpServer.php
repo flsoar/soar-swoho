@@ -4,13 +4,13 @@
  * @author flyman
  */
 
-namespace Soar\Swoho\Core\Swoole;
-use Soar\Swoho\Common\Result;
-use Soar\Swoho\Common\Traits\OneKeyInstance;
-use Soar\Swoho\Core\Route\RouteDispatch;
-use Soar\Swoho\Facade\Context;
-use Soar\Swoho\Core\Entity\Http;
-use Soar\Swoho\Core\DB\Eloquent;
+namespace Swoho\Core\Swoole;
+use Swoho\Common\Result;
+use Swoho\Common\Traits\OneKeyInstance;
+use Swoho\Core\Route\RouteDispatch;
+use Swoho\Facade\Context;
+use Swoho\Core\Entity\Http;
+use Swoho\Core\DB\Eloquent;
 
 class HttpServer
 {

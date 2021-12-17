@@ -1,7 +1,7 @@
 <?php
-namespace Soar\Swoho\Core\Route;
-use Soar\Swoho\Common\Result;
-use Soar\Swoho\Facade\Context;
+namespace Swoho\Core\Route;
+use Swoho\Common\Result;
+use Swoho\Facade\Context;
 
 class RouteDispatch
 {

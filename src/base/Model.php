@@ -1,7 +1,7 @@
 <?php
-namespace Soar\Swoho\Base;
+namespace Swoho\Base;
 
-use Soar\Swoho\Common\Traits\OneKeyInstance;
+use Swoho\Common\Traits\OneKeyInstance;
 use Illuminate\Database\Eloquent\Model as BaseModel;
 
 abstract class Model extends BaseModel

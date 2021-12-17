@@ -21,10 +21,10 @@
 
         ],
         "psr-4": {
-            "Soar\\Swoho\\Base\\":"./src/base/",
-            "Soar\\Swoho\\Common\\":"./src/common/",
-            "Soar\\Swoho\\Core\\":"./src/core/",
-            "Soar\\Swoho\\Facade\\":"./src/facade/"
+            "Swoho\\Base\\":"./src/base/",
+            "Swoho\\Common\\":"./src/common/",
+            "Swoho\\Core\\":"./src/core/",
+            "Swoho\\Facade\\":"./src/facade/"
         },
         "files": [
             "./src/common/functions.php"

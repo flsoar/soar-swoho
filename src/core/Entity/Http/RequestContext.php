@@ -1,5 +1,5 @@
 <?php
-namespace Soar\Swoho\Core\Entity\Http;
+namespace Swoho\Core\Entity\Http;
 
 use Swoole\Http\Request;
 
