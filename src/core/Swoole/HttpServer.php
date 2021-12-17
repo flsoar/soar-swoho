@@ -4,13 +4,13 @@
  * @author flyman
  */
 
-namespace Swoho\Core\Swoole;
-use Swoho\Common\Result;
-use Swoho\Common\Traits\OneKeyInstance;
-use Swoho\Core\Route\RouteDispatch;
-use Swoho\Facade\Context;
-use Swoho\Core\Entity\Http;
-use Swoho\Core\DB\Eloquent;
+namespace Flsoar\Swoho\Core\Swoole;
+use Flsoar\Swoho\Common\Result;
+use Flsoar\Swoho\Common\Traits\OneKeyInstance;
+use Flsoar\Swoho\Core\Route\RouteDispatch;
+use Flsoar\Swoho\Facade\Context;
+use Flsoar\Swoho\Core\Entity\Http;
+use Flsoar\Swoho\Core\DB\Eloquent;
 
 class HttpServer
 {

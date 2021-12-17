@@ -1,6 +1,6 @@
 <?php
-namespace Swoho\Common;
-use Swoho\Facade\Context;
+namespace Flsoar\Swoho\Common;
+use Flsoar\Swoho\Facade\Context;
 
 class Result implements \JsonSerializable{
 

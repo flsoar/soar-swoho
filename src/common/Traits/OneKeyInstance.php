@@ -1,5 +1,5 @@
 <?php
-namespace Swoho\Common\Traits;
+namespace Flsoar\Swoho\Common\Traits;
 
 /**
  * Class OneKeyInstance

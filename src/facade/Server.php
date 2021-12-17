@@ -1,13 +1,13 @@
 <?php
-namespace Swoho\Facade;
-use Swoho\Core\Swoole\HttpServer;
+namespace Flsoar\Swoho\Facade;
+use Flsoar\Swoho\Core\Swoole\HttpServer;
 
 class Server
 {
     /**
      * @author flyman
      * @param string $name
-     * @return \Swoho\Common\Result|\Swoole\Http\Server
+     * @return \Flsoar\Swoho\Common\Result|\Swoole\Http\Server
      */
     public static function http($name = '')
     {

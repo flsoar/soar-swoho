@@ -1,7 +1,7 @@
 <?php
-namespace Swoho\Base;
-use Swoho\Common\Result;
-use Swoho\Common\Traits\OneKeyInstance;
+namespace Flsoar\Swoho\Base;
+use Flsoar\Swoho\Common\Result;
+use Flsoar\Swoho\Common\Traits\OneKeyInstance;
 abstract class Controller
 {
     use OneKeyInstance;

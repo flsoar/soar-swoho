@@ -1,5 +1,5 @@
 <?php
-namespace Swoho\Facade;
+namespace Flsoar\Swoho\Facade;
 
 class Context
 {

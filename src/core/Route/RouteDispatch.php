@@ -1,7 +1,7 @@
 <?php
-namespace Swoho\Core\Route;
-use Swoho\Common\Result;
-use Swoho\Facade\Context;
+namespace Flsoar\Swoho\Core\Route;
+use Flsoar\Swoho\Common\Result;
+use Flsoar\Swoho\Facade\Context;
 
 class RouteDispatch
 {

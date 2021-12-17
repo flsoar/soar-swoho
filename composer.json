@@ -1,5 +1,5 @@
 {
-    "name": "soar/swoho",
+    "name": "flsoar/swoho",
     "description": "Ultra-lightweight serverless framework to quickly build micro-service monomers.",
     "keywords": ["framework", "serverless", "micro-service"],
     "license": "BSD-3-Clause",
@@ -21,10 +21,10 @@
 
         ],
         "psr-4": {
-            "Swoho\\Base\\":"./src/base/",
-            "Swoho\\Common\\":"./src/common/",
-            "Swoho\\Core\\":"./src/core/",
-            "Swoho\\Facade\\":"./src/facade/"
+            "Flsoar\\Swoho\\Base\\":"./src/base/",
+            "Flsoar\\Swoho\\Common\\":"./src/common/",
+            "Flsoar\\Swoho\\Core\\":"./src/core/",
+            "Flsoar\\Swoho\\Facade\\":"./src/facade/"
         },
         "files": [
             "./src/common/functions.php"

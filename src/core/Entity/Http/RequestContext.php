@@ -1,5 +1,5 @@
 <?php
-namespace Swoho\Core\Entity\Http;
+namespace Flsoar\Swoho\Core\Entity\Http;
 
 use Swoole\Http\Request;
 
