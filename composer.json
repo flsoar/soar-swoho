@@ -1,5 +1,5 @@
 {
-    "name": "flsoar/swoho",
+    "name": "flsoar/soar-swoho",
     "description": "Ultra-lightweight serverless framework to quickly build micro-service monomers.",
     "keywords": ["framework", "serverless", "micro-service"],
     "license": "BSD-3-Clause",
