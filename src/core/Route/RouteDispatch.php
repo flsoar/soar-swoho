@@ -19,7 +19,7 @@ class RouteDispatch
         if (! $act) {
             Result::error('api not exists', 0, [])->send();
         } else {
-            $act::instance()->run();
+            (new $act())->run();
         }
     }
 }

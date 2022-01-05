@@ -40,11 +40,12 @@ class HttpServer
 
         $server = new \Swoole\Http\Server($config['address'], $config['port']);
         $server->set([
-            'worker_num' => $config['address'],
-            'backlog' => $config['backlog']
+            #'daemonize'  => 2,
+            'worker_num' => $config['address'] ?? '',
+            'backlog'    => $config['backlog'] ?? ''
         ]);
         $server->on('Start', function (\Swoole\Http\Server $server) use ($name) {
-            echo "server {$name} is runing\n";
+            console('http server build', "server {$name} is runing");
         });
         $server->on('Request', function (\Swoole\Http\Request $request, \Swoole\Http\Response $response) {
             Context::register(

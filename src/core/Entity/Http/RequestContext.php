@@ -83,5 +83,20 @@ class RequestContext
         return strtoupper($this->server['request_method']);
     }
 
+    /**
+     * @author flyman
+     * @return array
+     */
+    public function input()
+    {
+        if ($this->isGet()) {
+            return $this->request->get ?? [];
+        }
+
+        else if ($this->isPost()) {
+            return $this->request->post ?? [];
+        }
+    }
+
 
 }

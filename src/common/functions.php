@@ -3,7 +3,7 @@
 /**
  * load route config
  */
-if (! function_exists('config')) {
+if (! function_exists('route')) {
     function route($key = '')
     {
         $route = require APP . '/config/route.php';
@@ -35,6 +35,12 @@ if (! function_exists('config')) {
         }
 
         return $config[$key] ?? [];
+    }
+}
+
+if (! function_exists('console')) {
+    function console($node = '', $msg = '') {
+        echo "{$node}: {$msg}\r\n";
     }
 }
 

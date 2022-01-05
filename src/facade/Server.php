@@ -13,12 +13,17 @@ class Server
      */
     public static function http($name = '')
     {
-        $server = HttpServer::instance()->build($name);
-        if ($server instanceof Result) {
-            echo "init error: " . $server->getError()."\n";
-        } else {
-            return $server;
+        try {
+            $server = HttpServer::instance()->build($name);
+            if ($server instanceof Result) {
+                console('server http', $server->getError());
+            } else {
+                return $server;
+            }
+        } catch (\Exception $e) {
+            console('server http exception', $e->getMessage());
         }
+
     }
 
     /**
@@ -29,11 +34,16 @@ class Server
      */
     public static function httpStart($name = '')
     {
-        $server = HttpServer::instance()->build($name);
-        if ($server instanceof Result) {
-            echo "init error: " . $server->getError()."\n";
-        } else {
-            return $server->start();
+        try {
+            $server = HttpServer::instance()->build($name);
+            if ($server instanceof Result) {
+                console('server http start', $server->getError());
+            } else {
+                return $server->start();
+            }
+        } catch (\Exception $e) {
+            console('server http start exception', $e->getMessage());
         }
+
     }
 }

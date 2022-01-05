@@ -2,6 +2,8 @@
 namespace Flsoar\Swoho\Base;
 use Flsoar\Swoho\Common\Result;
 use Flsoar\Swoho\Common\Traits\OneKeyInstance;
+use Flsoar\Swoho\Facade\Context;
+
 abstract class Controller
 {
     use OneKeyInstance;
@@ -31,5 +33,14 @@ abstract class Controller
     public function error($msg = '', $data = [])
     {
         Result::error($msg, 0, $data)->send();
+    }
+
+    /**
+     * @author flyman
+     * @return mixed
+     */
+    public function input()
+    {
+        return Context::get('request')->input();
     }
 }
