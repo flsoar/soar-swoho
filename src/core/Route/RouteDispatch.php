@@ -14,7 +14,7 @@ class RouteDispatch
     public static function handle()
     {
         $uri = Context::get('request')->method();
-        $uri .= " ".strtolower(Context::get('request')->requestUri);
+        $uri .= " ".Context::get('request')->requestUri;
         $act = route($uri);
         if (! $act) {
             Result::error('api not exists', 0, [])->send();

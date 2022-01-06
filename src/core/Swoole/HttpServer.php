@@ -8,6 +8,7 @@ namespace Flsoar\Swoho\Core\Swoole;
 use Flsoar\Swoho\Common\Result;
 use Flsoar\Swoho\Common\Traits\OneKeyInstance;
 use Flsoar\Swoho\Core\Route\RouteDispatch;
+use Flsoar\Swoho\Core\Route\RouteValidate;
 use Flsoar\Swoho\Facade\Context;
 use Flsoar\Swoho\Core\Entity\Http;
 use Flsoar\Swoho\Core\DB\Eloquent;
@@ -53,7 +54,9 @@ class HttpServer
             );
             Context::register('response', $response);
             Eloquent::boot();
+            RouteValidate::handle();
             RouteDispatch::handle();
+
         });
 
         return $server;

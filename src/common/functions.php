@@ -24,13 +24,18 @@ if (! function_exists('route')) {
 if (! function_exists('config')) {
     function config($str = '')
     {
-        list($file, $key) = explode('.', $str);
+        if (strpos($str, '.')) {
+            list($file, $key) = explode('.', $str);
+        } else {
+            $file = $str;
+        }
+
         if (! file_exists(APP . "/config/{$file}.php")) {
             return false;
         }
 
         $config = require APP . "/config/{$file}.php";
-        if (empty($key)) {
+        if (! isset($key)) {
             return $config;
         }
 

@@ -40,7 +40,7 @@ class RequestContext
     {
         $this->request     = $request;
         $this->server      = $request->server;
-        $this->requestUri  = $this->server['request_uri'];
+        $this->requestUri  = strtolower($this->server['request_uri']);
         $this->requestTime = $this->server['request_time_float'];
         return $this;
     }

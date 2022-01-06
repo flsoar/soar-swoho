@@ -66,7 +66,6 @@ class Result implements \JsonSerializable{
      */
     public function __construct($errno=200, $error='ok', $data=[])
     {
-        //header("Content-Type:application/json");
         $this->_raw['code'] = $errno;
         $this->_raw['msg'] = $error;
         $this->_raw['data'] = $data;
@@ -148,7 +147,6 @@ class Result implements \JsonSerializable{
         $response->end(
             json_encode($this->_raw, JSON_UNESCAPED_UNICODE)
         );
-
     }
     public function toArray()
     {
