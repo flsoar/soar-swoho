@@ -13,7 +13,6 @@
         "php": "^7.2.5|^8.0",
         "illuminate/database": "^8.75",
         "illuminate/pagination": "^8.75",
-        "illuminate/redis": "^8.80",
         "illuminate/translation": "^8.78",
         "illuminate/validation": "^8.78",
         "nikic/fast-route": "^1.3"
