@@ -15,7 +15,7 @@ class Eloquent
         $capsule = new Capsule();
         $config = config('database.mysql');
         if ($config) {
-            $capsule->addConnection();
+            $capsule->addConnection($config);
             $capsule->setAsGlobal();
             $capsule->bootEloquent();
         }
