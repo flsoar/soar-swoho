@@ -39,10 +39,11 @@ class Server
             if ($server instanceof Result) {
                 console('server http start', $server->getError());
             } else {
+                Context::register('server', $server);
                 return $server->start();
             }
         } catch (\Exception $e) {
-            console('server http start exception', $e->getMessage());
+            console('server http start exception', $e->getMessage().' in file '.$e->getFile().' on line '.$e->getLine());
         }
 
     }

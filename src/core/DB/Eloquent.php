@@ -13,8 +13,12 @@ class Eloquent
     public static function boot()
     {
         $capsule = new Capsule();
-        $capsule->addConnection(config('database.mysql'));
-        $capsule->setAsGlobal();
-        $capsule->bootEloquent();
+        $config = config('database.mysql');
+        if ($config) {
+            $capsule->addConnection();
+            $capsule->setAsGlobal();
+            $capsule->bootEloquent();
+        }
+
     }
 }

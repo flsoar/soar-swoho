@@ -43,4 +43,16 @@ abstract class Controller
     {
         return Context::get('request')->input();
     }
+
+    /**
+     * output html
+     * @author flyman
+     * @param string $page
+     */
+    public function html($page = '')
+    {
+        $response = Context::get('response');
+        $response->header('Content-Type', 'text/html');
+        $response->sendfile(pagePath($page));
+    }
 }

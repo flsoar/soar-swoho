@@ -43,6 +43,22 @@ if (! function_exists('config')) {
     }
 }
 
+
+/**
+ * load config
+ */
+if (! function_exists('pagePath')) {
+    function pagePath($str = '')
+    {
+        if (! file_exists(APP . "/pages/{$str}.php")) {
+            return false;
+        }
+
+        return APP . "/pages/{$str}.php";
+    }
+}
+
+
 if (! function_exists('console')) {
     function console($node = '', $msg = '') {
         echo "{$node}: {$msg}\r\n";
