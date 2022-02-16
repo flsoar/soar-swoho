@@ -6,11 +6,22 @@ Starting a new project is a very troublesome thing, not only the development pro
 
 
 
-## Composer
+## Install
 
 ```
 composer reqire flsoar/soar-swoho
 ```
+
+
+
+## Feature
+
+- [x] Custom routing
+- [x] Integrate Laravel Eloquent ORM
+- [x] Integrate Laravel validator
+- [ ] Code hot update
+- [ ] CURD Assist
+- [ ] Permission annotation
 
 
 
