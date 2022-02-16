@@ -14,7 +14,7 @@ composer reqire flsoar/soar-swoho
 
 
 
-## Feature
+## Feature And Plan
 
 - [x] Custom routing
 - [x] Integrate Laravel Eloquent ORM
@@ -25,11 +25,9 @@ composer reqire flsoar/soar-swoho
 
 
 
-## Used for api layer
+## Documentation
 
 
-
-## Used for pure static layer
 
 
 
