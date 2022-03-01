@@ -43,12 +43,13 @@ class HttpServer
         $config = $config[$name];
         $server = new \Swoole\Http\Server($config['address'], $config['port']);
         $server->set([
-            #'daemonize'  => 2,
-            'worker_num'        => $config['worker_num'] ?? '',
-            'backlog'           => $config['backlog'] ?? '',
-            'enable_coroutine'  => true,
-            'send_yield'        => true,
-            'enable_reuse_port' => true
+            'daemonize'  => 2,
+            'worker_num'            => $config['worker_num'] ?? '',
+            'backlog'               => $config['backlog'] ?? '',
+            'enable_coroutine'      => true,
+            'send_yield'            => true,
+            'enable_reuse_port'     => true,
+            'enable_static_handler' => true,
         ]);
         $server->on('Start', function (\Swoole\Http\Server $server) use ($name) {
             console('http server build', "server {$name} is runing");
